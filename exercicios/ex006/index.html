@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatacao de Textos</title>
+    <style>
+        mark{
+            background-color: rgb(193, 68, 255); /* Mudando a cor de todas as marcações com CSS. É recomendável usar essa, pois é bem mais intuitiva. */
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatacoes</h1>
+    <h2>Negrito / Destaque</h2>
+
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B(nao semantica)</p>
+    <p>Nessa frase temos um <strong>termo em destaque</strong> usando a tag STRONG(semantica).</p>
+
+    <h2>Italico / Enfase</h2>
+    <p>Nesta frase temos um <i>termo em italico</i> usando a tag I (nao semantica).</p>
+
+    <!-- OBS: Evite usar as tags <b></b> and <i></i>, pois ja existem tags mais eficientes, alem do CSS ja cuidar de uma certa parte. -->
+
+    <p>Nesta frase temos um termo <em>em enfase</em> usando a tag EM (semanticaa).</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark style="background-color: greenyellow;">um texto marcado</mark> usando a tag MARK.</p> <!-- obs: para mudar de cor, deve usar CSS, mas para mudar todas cores de uma vez, deve usar CSS fora da tag. -->
+    <p>E no outro paragrafo temos outro <mark>texto marcado</mark></p>
+    <p>E para completar, <mark>mais um texto marcado</mark></p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois</p>
+    <p>Existe tabém o <U>sublinhado</U> com a tag U (não semantica)</p> <!-- Mas essa tag está em desuso, não recomendamos usar ela. -->
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <p></p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0</p>
+
+    <h4>Tem-se também a tag "code" indicando ao navegador que se trata de um código de <br>computador e a tag "pre" para deixar o texto que você digitou pré-formatado, respeitando <br>os espaços e quebras de linha.</h4>
+
+    <h5>Exemplo de código em Golang</h5>
+    <pre>
+        <code>
+            package main
+            import "fmt"
+        
+            func main(){
+                var valor_ingresso, valor_inicial, valor_final float64 = 0, 0, 0
+        
+                for
+        
+                fmt.Printf("Informe os dados abaixo:\n\n")
+        
+                fmt.Printf("Valor do ingresso: ")
+                fmt.Scan(&valor_ingresso)
+                fmt.Printf("Valor inicial: ")
+                fmt.Scan(&valor_inicial)
+                fmt.Printf("Valor final: ")
+                fmt.Scan(&valor_final)
+        
+                valor_final += valor_inicial * valor_ingresso
+        
+                if valor_final < valorfinal+1{
+                    valor_final = valor_final
+                }
+            }
+        </code>
+    </pre>
+
+<h3>Citações</h3>
+<p>Uma citação geralmente fica entre aspas ou com as margens deslocadas em relação <br> ao texto. Veja no exemplo abaixo:</p>
+<p><q>Aqui estamos usando uma citação em HTML usado a tag q.</q></p><br>
+
+<p>Mas podemos usar citações mais longas (em bloco) com a tag blockquote,<br>fazendo o texto ganhar um recuo automático. Veja no exemplo abaixo:</p>
+<p> <blockquote>JavaScript é uma linguagem de programação dinâmica, amplamente <br> utilizada para criar e controlar conteúdo dinâmico em páginas web, <br> proporcionando interatividade e funcionalidades avançadas que <br>vão além do HTML e CSS.</blockquote> </p><br>
+
+<p>Aqui estamos usando a tag <code>&lt;abbr&gt;</code> para abreviar termos. Exemplo: <br>
+Os <abbr title="Agente Comunitário de Saúde">ACS</abbr> são essenciais no combate ao câncer bucal.</p>
+
+<p>Deixando um texto invertido com a tag &lt;bdo&gt e parametro "rtl". Exemplo: <bdo dir="rtl">TEXTO INVERTIDO;</bdo> <br></br><bdo dir="ltr">TEXTO INVERTIDO</bdo></p>
+<!-- rtl = da direita para a esquerda (right-to-left)
+     ltr = da esquerda para a direita (left-to-right) -->
+    
+</body>
+</html>

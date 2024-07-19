@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+                    #    ==   id
+                    .    ==   class
+                    :    ==   pseudo-class
+                    ::   ==   pseudo-element
+                    >    ==   children
+        */
+        div{
+            background-image: linear-gradient(-45deg, rgb(1, 1, 114), #00fab3);
+            background-attachment: fixed;
+            height: 50px;
+            width: 500px;
+            border-radius: 7px;
+            text-align: ;
+        }
+
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+            background-color: rgba(220, 241, 232, 0.803);
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:visited {
+            color: rgb(0, 0, 174);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgba(0, 0, 255, 0.675);
+            font-weight: 800;
+        }
+        
+        a:active {
+            color: rgb(209, 3, 89);
+        }
+
+        .especial {
+            font-size: 1.1em;
+            position: relative;
+        }
+
+        .especial::before {
+            content: '➜ ';
+            color: rgb(0, 0, 174);
+            transition: font-size 0.3s ease;
+        }
+
+        .especial::after {
+            content: ' ✪';
+            text-decoration: none;
+            color: rgb(98, 2, 188);
+        }
+
+        .especial:hover::before {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <div>
+        <p>
+            <ul>
+                <li class="especial"><a href="https://github.com/daviddaves1/ip-2024-01" target="_blank">Repositório GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/david-daves-ferreira-pinto-1517a9290/" target="_blank">Linkedin</a></li>
+                <li><a href="https://www.instagram.com/daviddaves_/" target="_blank">Instagram</a></li>
+            </ul>
+        </p>
+    </div>
+</body>
+</html>

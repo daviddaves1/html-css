@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/Mf love Song.ttf') format(truetype), url('fonts/jully\ julia.otf'), format(opentype);
+            /* tipos de format()
+                    - opentype (otf)
+                    - truetype (ttf)
+                    - embedded-opentype
+                    - truetype-aat (Apple Advanced Typography)
+                    - svg
+            */
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        h1{
+            font-family: 'Love';
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h2{
+            font-family: 'Love';
+        }
+
+        /* Dica: use ferramentas como What Font Is, Font Squirrel e Myfonts para identificar fontes em imagens. Obs: o que tem a melhor acertividade é o What Fonts Is. */
+    </style>
+</head>
+<body>
+    <h1>Fontes externas</h1>
+    <p>Para utilizar uma fonte externa, você pode seguir algumas etapas simples usando a regra @font-face no CSS. A regra @font-face <br> permite que você defina uma fonte personalizada que pode ser aplicada a elementos HTML.</p>
+    <h2>Tipos de Formatos de Fontes</h2>
+    <p>Há vários formatos de fontes que podem ser usados, cada um com <br>suas próprias características e compatibilidades com diferentes <br> navegadores:
+        <ul><br>
+            <li>TrueType (TTF): Um dos formatos mais comuns, compatível <br> com a maioria dos navegadores.</li><br>
+            <li>OpenType (OTF): Uma versão mais avançada do TTF, com <br> suporte para mais recursos tipográficos.</li><br>
+        </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas absolutas
+            cm, mm, in, px, pt, pc
+            
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+            16px == 1em 
+            
+            Procure sempre optar por usar "px" ou "em" ou "%" */
+
+            font-size: 1em;
+        }
+        
+        h1{
+            font-family: 'work Sans' sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            font: italic bolder 3em 'work Sans', sans-serif;
+
+        /* Odem do shorthand: font-style: --> font-weight: --> font-size: --> font-family: 
+        Opte sempre que possível, pela configuração de baixo para não precisar digitar muito, mas você deve sempre seguir a odem, senão não vai funcionar. Isso é conhecido como shorthand. */
+        }
+
+        h2{
+            font: bold 2em, 'work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ut dolor totam eum illo earum distinctio id corrupti expedita sequi, deserunt perspiciatis quia provident amet minima error pariatur odio deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur natus, aspernatur iste amet nulla ut libero voluptatem fuga enim aliquam nobis sit voluptates tempore unde. Blanditiis harum neque aliquid!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro incidunt ut molestiae magni maiores architecto officia assumenda totam dignissimos vitae molestias nihil a debitis, facere aliquid. Ducimus quasi ullam veniam?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repellat mollitia molestiae, perferendis, ipsum at voluptatem quasi accusamus, debitis animi reiciendis praesentium ab laudantium excepturi cum veritatis repudiandae ipsam vero! lore</p>
+
+</body>
+</html>

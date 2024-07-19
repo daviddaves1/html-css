@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*      Em HTML é "id" = Em CSS é "#" (só pode 1 elemento)
+        Em HTML é "class" = Em CSS é "." (pode vários elementos)      
+*/
+
+body{
+    background-color: rgb(199, 250, 216);
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    color: rgb(0, 70, 23);;
+}
+
+h1#main{
+    text-align: center;
+    color: white;
+}
+/* Criamos um indentificador (id) no HTML para esse h1, assim conseguimos alterar somente ele sem alterar os outros h1. */
+
+h2{
+    color: rgba(0, 95, 0, 0.808);
+}
+
+.basico{
+    color: rgb(0, 90, 0);
+}
+
+.intermediario{
+    color: rgb(156, 156, 0);
+}
+
+.avancado{
+    color: rgb(0, 0, 144);
+}
+
+.destaque{
+    background-color: rgba(0, 140, 21, 0.667);
+}

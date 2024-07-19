@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p { /* Quando há ">" significa que p é filho de div */
+            display: none;
+        }
+
+        div:hover > p{ 
+            color: red;
+            display: block;
+            color: white;
+            background-color: rgb(163, 0, 0);
+            width: 300px;
+        }
+        /* ":hover" é um seletor especial que aplica estilos a um elemento quando o ponteiro do mouse passa sobre ele */
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

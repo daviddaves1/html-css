@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            height: 300px;
+            width: 300px;
+            background-color: rgba(205, 233, 216, 0.885);
+            /* Logo abaixo usa-se short-hands para simplificar o codigo. Sempre que puder, simplifique! */
+
+            border: 10px solid rgb(0, 122, 14);
+            padding: 10px;
+            margin: 20px auto 40px auto; /* para centralizar uma box de modo automático, onde na parte de cima ficará com 20px de distância, e na de baixo com 40px de distância, e centralizada dos lados de forma automática independente do tamanho da tela. */
+            outline: 5px dashed rgb(0, 255, 8);
+        }
+
+        /* Use sempre o dev-tools no navegador para te auxiliar. */
+
+        a{
+            display: inline-block;
+            border: 6px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box Level</h1>
+    <p>Parágrafos também são exemplos de box level, mas os <a href="#">links são exemplos de caixas inline level</a>. Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>

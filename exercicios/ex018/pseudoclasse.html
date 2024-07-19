@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+
+        h1{
+            font-weight: bolder;
+        }
+
+        body{
+            font: normal 1em Arial, Helvetica, sans-serif;
+            margin: auto;
+        }
+
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:active{
+            color:  rgb(255, 0, 0);
+        }
+
+        div{
+            display: inline-block;
+            background-color: rgb(128, 0, 0);
+            border: 3px solid white;
+            border-radius: 15px 30px;
+            color: white;
+            text-align: center;
+            height: 130px;
+            width: 220px;
+            font-weight: bold;
+            margin: auto;
+            box-shadow: 2px 2px rgba(49, 0, 0, 0.482);
+        }
+
+        div:hover{
+            background-color: rgb(210, 11, 0);
+        }
+
+        /* p{
+            font-weight: bold;
+        }
+
+        p > a{
+            text-decoration: none;
+            color: rgb(54, 54, 216);
+        }
+        
+        p > a:hover{
+            text-decoration: underline;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Pseudoclasses</h1>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <br>
+    <p>Acesse o meu <a href="https://www.linkedin.com/in/david-daves-ferreira-pinto-1517a9290/" target="_blank" rel="external">Linkedin</a></p>
+</body>
+</html>

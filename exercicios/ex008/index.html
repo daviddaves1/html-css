@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar um dos meus <a href="https://github.com/daviddaves1/ip-2024-01" target="_blank" rel="external">reposotórios no GitHub</a></p>
+    <p>Você também pode acessar <a href="https://www.linkedin.com/in/david-daves-ferreira-pinto-1517a9290/" target="_blank" rel="external">o meu perfil no Linkedin</a></p>
+    
+    <!-- Quando tiver que usar link de um site externo (que não seja o seu) é super importante usar outra aba para abrir o site externo. Então usamos target="_blank" rel="external" para isso.-->
+
+    <h1>Usando links internos</h1>
+    <p>Essa é a primeira página do meu site. Se você quiser pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p> <!-- É importante colocar rel="next" indicando com clareza ao navegador para ir á próxima página. -->
+
+    <p>Você também pode acesar minha <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+</body>
+</html>
