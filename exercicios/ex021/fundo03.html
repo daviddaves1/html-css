@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição dos fundos</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            background-image: url('imagens/w  allpaper005.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            background: blueviolet url('imagens/wallpaper005.jpg') center center no-repeat fixed; /* simplificando com shorthands */
+        }
+
+        .bloco{
+            background-image: url('imagens/wallpaper003.jpg');
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        #squ1{
+            background-position: left top;
+        }
+
+        #squ2{
+            background-position: left center;
+        }
+
+        #squ3{
+            background-position: right bottom;
+        }
+
+        #squ4{
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="squ1">
+
+    </div>
+    <div class="bloco" id="squ2">
+
+    </div>
+    <div class="bloco" id="squ3">
+
+    </div>
+    <div class="bloco" id="squ4">
+
+    </div>
+</body>
+</html>
