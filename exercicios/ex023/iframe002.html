@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.296);
+        }
+
+        .erro{
+            padding: 1.4em;
+            color: rgb(220, 0, 0);
+            font-weight: bolder;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste com iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nihil corporis nostrum voluptates cupiditate illo quo magnam neque? Tenetur ipsam eius, cum et magni minus! Itaque ex dolore aperiam cum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum similique corrupti ullam impedit, labore sunt voluptate ipsum! Error, a! Expedita eos fuga vel suscipit dolor sit nobis dolore impedit repellat?</p>
+
+    <iframe src="paginas-extras/pagina001.html" frameborder="0" height="500" width="500">
+        <p class="erro">Ops, infelizmente esse navegador não é compatível para essa exibição</p>
+    </iframe>
+
+
+    <p>ATENÇÃO: Nesse caso, o melhor seria vc colocar a tabela da outra página aqui nesse site ao invés de usar o iframe, onde ela ficaria dentro de uma div, e nessa tabela vc usaria "overflow-x: auto;" para a rolagem horizontal.</p><br>
+    <!-- ATENÇÃO: Nesse caso, o melhor seria vc colocar a tabela da outra página dentro de uma div ao invés de usar o iframe, e nela vc usaria "overflow-x: auto;" para a rolagem horizontal.  -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos est itaque error quam, odit eius, esse qui ipsa officiis asperiores totam laborum corporis dolore recusandae soluta fugiat aperiam. Nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dicta modi architecto iure tenetur dolorum labore unde accusantium itaque nesciunt. Voluptatibus, qui eius. Inventore ea nobis voluptatum vero, dolore atque?</p>
+</body>
+</html>
