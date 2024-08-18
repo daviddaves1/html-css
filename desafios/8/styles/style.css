@@ -37,6 +37,7 @@ a.externa::after{
 
 img{
     width: 100%;
+    border-radius: 10px;
 }
 
 header{
@@ -116,7 +117,7 @@ main img.small {
     margin: 0px -20px 30px -20px;
     padding: 20px;
     position: relative;
-    padding-bottom: 56.5%;
+    padding-bottom: 56.7%;
 }
 
 .video > iframe{
@@ -125,6 +126,7 @@ main img.small {
     left: 5%;
     width: 90%;
     height: 90%;
+    border-radius: 10px;
 }
 
 main h1{

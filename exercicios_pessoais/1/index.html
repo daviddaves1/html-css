@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrando páginas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aqui está um site com assuntos de tecnologia</h1>
+    <p>A tecnologia contribui de forma significativa para o desenvolvimento da sociedade no geral, isso se dá por conta dos mecanismos <br>de software estarem bem sofisticados e intuitivos para a usabilidade d
+        ,os indivíduos, causando uma melhor percepção no que se diz respeito a interação entre humano e computador que se dá através desses sistemas computacionais não tangíveis. <br><br>Exemplos de softwares:</p>
+    <img src="pexels-artyusufpatel-8998295.jpg" alt="microsoft-windows"> <img src="" alt=""> <img src="pexels-brettjordan-5426401.jpg" alt="apps"> <img src="pexels-pixabay-267350.jpg" alt="">
+    <p>Atualmente algo que também é essencial no uso de um software é o hardware, onde esse hospeda o sistema operacional localmente em seu armazenamento de memória para que outros tipos de softwares também possam ser utilizados, levando em consideração a integralidade para o funcionamento correto. Além do mais, o hardware desempenha funções de mera importância que incluem processamento de dados, velocidade de leitura das dados, procesamento de imagens, dentre outros atributos. Exemplos de hardwares:</p>
+    <img src="pexels-padrinan-343457.jpg" alt=""> <img src="pexels-pixabay-40879.jpg" alt=""> <img src="pexels-tanasovich-2588757.jpg" alt="">
+
+    <p><a href="https://about.meta.com/" target="_blank" rel="external">Site da Meta</a></p>
+    <a href="pag002/pag002.html" target="_self" rel="next">
+        <p>Link interno para a próxima página</p>
+    </a><br>
+
+    Nome: <input type="text" name="nome" id="nome"><br><br>
+    Idade: <input type="text" name="idade" id="idade"><br><br>
+    Gênero: <input type="text" name="genero" id="genero"><br><br><br>
+    <input type="button" value="Confirmar" onclick="Confirmar()">
+
+    <script>
+        function Confirmar(){
+            var nome = document.querySelector('#nome').value;
+            var idade = document.querySelector('#idade').value;
+            var genero = document.querySelector('#genero').value;
+
+            alert(`Olá ${nome}, você tem ${idade} anos e é do gênero ${genero}!`);
+        }
+    </script>
+</body>
+</html>
