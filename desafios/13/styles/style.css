@@ -41,3 +41,10 @@ main{
     background: url("../imagens/frame-iphone.png") no-repeat;
 }
 
+#display{
+    position: relative;
+    top: 80px;
+    left: 23px;
+    width: 269px;
+    height: 471px;
+}
