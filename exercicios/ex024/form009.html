@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="number">Número: </label>
+            <input type="range" name="number" id="number" min="0" max="10" value="0" oninput="mostrarNumbers()">
+            <output id="value">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function mostrarNumbers(){
+            value.innerHTML = Number(number.value)
+        }
+    </script>
+</body>
+</html>
