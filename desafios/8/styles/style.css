@@ -29,6 +29,7 @@
 body{
     background-color: var(--cor0);
     font-family: var(--font-padrao);
+    overflow-x: hidden; /* Removendo a rolagem horizontal da tela */
 }
 
 a.externa::after{
@@ -62,9 +63,7 @@ header > p{
     font-size: 1.5em;
     color: white;
     max-width: 500px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 30px;
+    padding: 0px 10px 30px 10px;
     margin: auto;
     font-weight: 600;
 }
