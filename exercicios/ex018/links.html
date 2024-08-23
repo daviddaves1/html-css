@@ -11,19 +11,24 @@
                     :    ==   pseudo-class
                     ::   ==   pseudo-element
                     >    ==   children
+
+                Pseudo-classes: Imagine que você está dizendo “se” algo acontecer com o elemento (como o mouse passar sobre ele), aplique este estilo.
+                
+                Pseudo-elementos: Imagine que você está criando uma parte extra do elemento (como adicionar um ícone antes do texto) e aplicando estilos a essa parte.
         */
-        div{
-            background-image: linear-gradient(-45deg, rgb(1, 1, 114), #00fab3);
-            background-attachment: fixed;
-            height: 50px;
-            width: 500px;
-            border-radius: 7px;
-            text-align: left;
-        }
 
         body {
             font: normal 1em Arial, Helvetica, sans-serif;
             background-color: rgba(220, 241, 232, 0.803);
+        }
+
+        ul{
+            background-image: linear-gradient(-45deg, rgb(1, 1, 114), #00fab3);
+            background-attachment: fixed;
+            height: 100px;
+            width: 500px;
+            border-radius: 7px;
+            text-align: left;
         }
 
         a {
@@ -49,10 +54,11 @@
         .especial {
             font-size: 1.1em;
             position: relative;
+            padding-top: 10px;
         }
 
         .especial::before {
-            content: '➜ ';
+            content: '➜ ';  
             color: rgb(0, 0, 174);
             transition: font-size 0.3s ease;
         }
@@ -70,14 +76,10 @@
 </head>
 <body>
     <h1>Personalizando links</h1>
-    <div>
-        <p>
-            <ul>
-                <li class="especial"><a href="https://github.com/daviddaves1/ip-2024-01" target="_blank">Repositório GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/david-daves-ferreira-pinto-1517a9290/" target="_blank">Linkedin</a></li>
-                <li><a href="https://www.instagram.com/daviddaves_/" target="_blank">Instagram</a></li>
-            </ul>
-        </p>
-    </div>
+        <ul>
+            <li class="especial"><a href="https://github.com/daviddaves1/ip-2024-01" target="_blank">Repositório GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/david-daves-ferreira-pinto-1517a9290/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/daviddaves_/" target="_blank">Instagram</a></li>
+        </ul>
 </body>
 </html>
