@@ -22,7 +22,7 @@ body{
 
 main{
     background-color: rgba(255, 255, 255, 0.422);
-    width: 400px;
+    width: 300px;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
@@ -42,8 +42,8 @@ img{
     margin: auto;
 }
 
-#phone {display: block;}
-#tablet {display: block;}
-#print {display: block;}
-#pc {display: block;}
-#tv{display: block;}
+#phone {display:block;}
+#tablet {display:none;}
+#print {display: none;}
+#pc {display: none;}
+#tv{display: none;}
