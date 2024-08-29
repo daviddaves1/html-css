@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    #burguer{
+        display: none;
+    }
+
+    header > h1{
+        padding-top: 1em;
+    }
+
+    menu{
+        display: block;
+        padding: 5px 0px 20px 10px;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    menu > ul > li > a{
+        border-radius: 5px;
+        border: 1px solid rgb(251, 216, 198);
+    }   
+
+    main{
+        width: 740px;
+        margin-top: 3em;
+        margin-bottom: 2.5em;
+    }
+
+    main > article > h2{
+        margin: 1em;
+        text-align: center;
+    }
+
+    main > article > p{
+        line-height: 32px;
+        margin: 0em 4em 2em 4em;
+    }
+}
