@@ -4,6 +4,8 @@
     --cor0: #9E11F5;
     --cor1: #5411F5;
     --cor2: #1119AA;
+    --cor3: #61c602;
+    --cor4: #e2e200;
 }
 
 *{
@@ -14,7 +16,7 @@
 }
 
 body, html{
-    background-color: var(--cor0);
+    background-color: var(--cor1);
     height: 100vh;
     width: 100vw;
 }
@@ -33,11 +35,11 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.412);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 #login > #imagem{
@@ -60,5 +62,89 @@ main{
 
 #formulario > p{
     font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
+form > .campo{
+    background-color: var(--cor1);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    border: 2px solid var(--cor1);
+}
+
+.campo > label{
+    display: none;
+}
+
+.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+.campo > input{
+    background-color: rgb(237, 233, 254);
+    font-size: 1em;
+    width: calc(100% - 40px);
+    height: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+    transform: translate(40px, -40px);
+}
+
+.campo > input:focus-within{
+    background-color: white;
+    outline: none;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor3);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 9px;
+}
+
+form > input[type=submit]:hover{
+    background-color: #54ad00;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+form > .botao{
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%;
+    height: 40px;
+    padding-top: 3px;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #61c602;
+    border-radius: 7px;
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+    font-weight: bold;
+}
+
+form > .botao:hover{
+    background-color: var(--cor4);
+    transition: 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+form > .botao > span{
+    font-size: 1.5em;
+    transform: translate(5%, 25%);
+}
