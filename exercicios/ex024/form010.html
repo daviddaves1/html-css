@@ -107,14 +107,14 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const iano = document.querySelector('#iano');
-            const iidade = document.querySelector('#iidade');
+            const iidade = document.querySelector('#iidade'); /* Este trecho seleciona o elemento <output> com o id "iidade" e armazena a referência a esse elemento na constante iidade. */
 
             function calcIdade() {
                 const atual = new Date().getFullYear();
-                iidade.innerHTML = Number(atual) - Number(iano.value);
+                iidade.innerHTML = Number(atual) - Number(iano.value); // Aqui o valor da idade é calculado e atualizado no elemento output
             }
 
-            iano.addEventListener('input', calcIdade);
+            iano.addEventListener('input', calcIdade); //Quando inserir dados no input esse evento será acionado e chamará a função
         });
     </script>
 </body>
