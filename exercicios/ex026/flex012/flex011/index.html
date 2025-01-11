@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        .container{
+            background-color: blue;
+            display: flex; /* deixa o cantainer adapatavel com a tela */
+            padding: 1em;
+            border-radius: 15px;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        
+        .container > .item{
+            background-color: rgb(225, 255, 0);
+            border: 1px solid black;
+            text-align: center;
+            padding: 1em;
+            border-radius: 5px;
+            margin-inline: 5px;
+            flex-shrink: 1; /* Os itens vão diminuir quando a tela ficar pequena */ 
+            flex-grow: 0; /* os itens não vão crescer */
+        }
+
+        #itemA{
+            flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 0;
+            
+            flex: 0 1 200px; /* shorthand para colocar as propriedades: flex-grow; flex-shrink; flex-basis;          Use essa! é mais versátil. */
+        }
+
+        #itemB{
+            flex-basis: 50px;
+            flex-shrink: 6;
+            flex-grow: 3;       
+            
+            flex: 3 6 150px;
+        }
+
+        #itemC{
+            flex-basis: 50px;
+            flex-shrink: 8;
+            flex-grow: 1;     
+            
+            flex: 1 8 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="itemA" class="item">A</div>
+        <div id="itemB" class="item">B</div>
+        <div id="itemC" class="item">C</div>
+    </div>
+</body>
+</html>

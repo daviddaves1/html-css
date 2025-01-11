@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        .container{
+            background-color: blue;
+            display: flex;
+            padding: 1em;
+            border-radius: 10px;
+
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+  
+        .container > .item{
+            background-color: rgb(225, 255, 0);
+            border: 1px solid black;
+            text-align: center;
+            padding: 0.5em;
+            border-radius: 5px;
+            margin-inline: 5px;
+            margin-block: 5px;
+
+            flex-basis: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">Outro conteudo</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">Mostrando mais conteúdos sobre as caixas flexiveis em HTML e CSS</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
+
+<!-- As caixas flexíveis no exemplo foram configuradas com um tamanho base de 50px (flex-basis: 50px). Elas só se expandem horizontalmente caso o conteúdo dentro delas seja maior que este tamanho, já que a propriedade padrão flex-grow está definida como 0 (os itens não crescem além do necessário).
+
+A propriedade flex-wrap: wrap, especificada através de flex-flow: row wrap, permite que os itens se organizem em várias linhas (ou colunas, dependendo do eixo principal) quando não há espaço suficiente no eixo principal. Isso evita que o conteúdo fique comprimido ou transborde do contêiner.
+
+Além disso, os itens ajustam seus tamanhos individualmente de acordo com o conteúdo. Itens com mais conteúdo podem expandir-se além do tamanho base (flex-basis: 50px), enquanto itens com conteúdo menor permanecem no tamanho especificado.
+
+Essa configuração cria uma disposição flexível, onde os itens ocupam o espaço necessário sem sobrecarregar o contêiner pai.
+
+ -->
